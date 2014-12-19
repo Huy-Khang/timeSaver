@@ -1,0 +1,17 @@
+{
+  "name": "timeSaver",
+  "version": "1.0",
+  "description": "Track your daily online life time",
+  "permissions": ["tabs","storage","https://*.google.com/*","<all_urls>"],
+  "background": {
+    "scripts": ["background.js","moment.js","jsapi.js","chart.min.js"]
+  },
+  "browser_action":{
+    // "default_icon": "green.png",
+  	"default_popup": "popup.html"
+  },
+  // "background_page": "background.html",
+  "author":"Khang H. Nguyen-Le",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://www.google.com/; object-src 'self'"
+}
